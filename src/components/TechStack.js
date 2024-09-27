@@ -33,7 +33,7 @@ function TechStack() {
   const [show, setShow] = useState(false);
 
   return (
-    <div>
+    <div id="technologies">
       {" "}
       <div
         className={`flex flex-col mb-[200px] ${
@@ -184,12 +184,14 @@ function TechStack() {
         </div>
       </div>
       <div className=" w-6 h-6 mt-[-40%] ml-[7vw] md:w-10 md:h-10 md:mt-[-10%] mb-[7%] md:ml-[7vw] cursor-pointer">
-        <img
-          src={arrow}
-          width="80%"
-          height="80%"
-          className="rotate-90 text-[rgba(193,193,193,255)]"
-        />
+        <a href="#projects">
+          <img
+            src={arrow}
+            width="80%"
+            height="80%"
+            className="rotate-90 text-[rgba(193,193,193,255)]"
+          />
+        </a>
       </div>
     </div>
   );

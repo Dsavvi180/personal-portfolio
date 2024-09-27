@@ -6,7 +6,10 @@ import arrow from "../assets/arrow.png";
 
 function About() {
   return (
-    <div className="flex-col justify-center w-[100vw] h-[73vh] mt-[10%] mb-[0px]">
+    <div
+      id="about"
+      className="flex-col justify-center w-[100vw] h-[73vh] mt-[10%] mb-[0px]"
+    >
       <div className="flex-col text-center mb-[7%]">
         <h3 className="pb-4 text-lg md:text-xl font-light text-[rgba(85,85,85,255)]">
           Behind the scenes:
@@ -80,12 +83,14 @@ function About() {
         </div>
       </div>
       <div className=" w-6 h-6 mt-[3%] ml-[7vw] md:w-10 md:h-10 md:mt-[-2%] md:ml-[7vw] cursor-pointer">
-        <img
-          src={arrow}
-          width="80%"
-          height="80%"
-          className="rotate-90 text-[rgba(193,193,193,255)]"
-        />
+        <a href="#technologies">
+          <img
+            src={arrow}
+            width="80%"
+            height="80%"
+            className="rotate-90 text-[rgba(193,193,193,255)]"
+          />
+        </a>
       </div>
     </div>
   );

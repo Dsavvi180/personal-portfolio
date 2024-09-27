@@ -28,10 +28,10 @@ function Cards(props) {
       </div>
       <div className="flex justify-center  gap-3 p-5 text-sm font-semibold mb-[-20%]">
         <button className="w-[130px] p-3 rounded-full border-solid border-[1.5px] border-[rgba(53,53,53,255)] hover:bg-[rgba(53,53,53,255)] hover:text-white">
-          Github
+          <a href={props.githubLink}>GitHub</a>
         </button>
         <button className="w-[130px] p-3 rounded-full text-white bg-[rgba(53,53,53,255)] border-solid border-[1.5px] border-[rgba(53,53,53,255)] hover:bg-black">
-          Live Demo
+          <a href={props.liveDemoLink}>Live Demo</a>
         </button>
       </div>
     </div>

@@ -4,7 +4,10 @@ import linkedIn from "../assets/linkedin-logo.png";
 
 function Contact() {
   return (
-    <div className="w-[100%] md:w-[50%] m-auto flex-col justify-center text-center align-middle gap-5 h-[55vh]">
+    <div
+      id="contact"
+      className="w-[100%] md:w-[50%] m-auto flex-col justify-center text-center align-middle gap-5 h-[55vh]"
+    >
       <h3 className="pb-4 text-xl font-light text-[rgba(85,85,85,255)]">
         Get in Touch
       </h3>

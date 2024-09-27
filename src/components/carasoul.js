@@ -32,44 +32,75 @@ function Carasoul() {
     }
   }
   const websites = [
-    { image: github1, caption: "Car Emporium React App x Three JS " },
+    {
+      image: github1,
+      caption: "Car Emporium React App x Three JS ",
+      githubLink: "https://github.com/Dsavvi180/CarEmporiumThreeJS",
+      liveDemoLink: "https://caremporiumthreejs-5a2ca.web.app/",
+    },
     {
       image: github2,
       caption: `Concurrency & Web Workers Demo JavaScript`,
+      githubLink: "https://github.com/Dsavvi180/JavaScript-Concurrency-Library",
+      liveDemoLink: "https://concurrencyjs.web.app/",
     },
-    { image: github3, caption: "HYPED Society Hyperloop \n Dashboard" },
-    { image: github6, caption: "Maths Tutor Website \n" },
+    {
+      image: github3,
+      caption: "HYPED Society Hyperloop \n Dashboard",
+      githubLink: "https://github.com/Dsavvi180/hyped-public-app-personal",
+      liveDemoLink: "",
+    },
+    {
+      image: github6,
+      caption: "Maths Tutor Website \n",
+      githubLink: "",
+      liveDemoLink: "https://mathstutor-feae3.web.app/",
+    },
   ];
   const webscraping = [
     {
       image: github5,
       caption: "Gene Sequence Processor \n",
+      githubLink: "https://github.com/Dsavvi180/sequenceGenWebScraper",
+      liveDemoLink: "",
     },
     {
       image: github4,
       caption: `Automated Ticket Categorization for UniDesk `,
+      githubLink: "https://github.com/Dsavvi180/Damens-Task-Bot-IT-Services",
+      liveDemoLink: "",
     },
     {
       image: github7,
       caption: "Right Move Property Data Scraper",
+      githubLink: "https://github.com/Dsavvi180/RightMoveWebScraper",
+      liveDemoLink: "",
     },
   ];
   const other = [
     {
       image: github8,
       caption: "Local AI Assistant \n",
+      githubLink: "https://github.com/Dsavvi180/localGPT-Assistant",
+      liveDemoLink: "",
     },
     {
       image: github9,
       caption: `Docker Container: Embedded VNC Server for Streaming`,
+      githubLink: "https://hub.docker.com/r/dsavvas/vnc-server",
+      liveDemoLink: "",
     },
-    {
-      image: github10,
-      caption: `Car Service Company Mobile App (Coming Soon)`,
-    },
+    // {
+    //   image: github10,
+    //   caption: `Car Service Company Mobile App (Coming Soon)`,
+    //   githubLink: "",
+    //   liveDemoLink: "",
+    // },
     {
       image: github7,
       caption: `Raspberry Pi Web Hosting Server`,
+      githubLink: "",
+      liveDemoLink: "",
     },
   ];
   const allCards = [...websites, ...webscraping, ...other];
@@ -80,6 +111,8 @@ function Carasoul() {
     <Cards
       image={data.image}
       caption={data.caption}
+      githubLink={data.githubLink}
+      liveDemoLink={data.liveDemoLink}
       position={index === main.middle ? "centre" : ""}
     />
   ));
@@ -177,12 +210,15 @@ function Carasoul() {
           </div>
         </div>
         <div className=" w-5 h-5 mt-[3%] ml-[7vw] md:w-10 md:h-10 md:mt-[-2%] md:ml-[7vw] cursor-pointer">
-          <img
-            src={arrow}
-            width="80%"
-            height="80%"
-            className="rotate-90 text-[rgba(193,193,193,255)]"
-          />
+          <a href="#contact">
+            {" "}
+            <img
+              src={arrow}
+              width="80%"
+              height="80%"
+              className="rotate-90 text-[rgba(193,193,193,255)]"
+            />
+          </a>
         </div>
       </div>
     );

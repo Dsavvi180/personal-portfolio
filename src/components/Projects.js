@@ -7,7 +7,7 @@ function Projects() {
   
 
   return (
-    <div className="flex-col justify-center align-middle h-[85vh] projects mb-[200px]">
+    <div id="projects" className="flex-col justify-center align-middle h-[85vh] projects mb-[200px]">
       <div className="flex-col text-center mb-[2.5%] titles">
         <h3 className="pb-4 text-xl font-light text-[rgba(85,85,85,255)]">
           Browse My Exhibition of

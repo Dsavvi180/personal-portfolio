@@ -45,7 +45,7 @@ function Banner() {
   }, [letterIndex, show]);
 
   return (
-    <div className="flex flex-col w-full mb-[130px] md:flex-row justify-center items-center h-[65vh] gap-[3%] mt-[38px] md:mb-[150px] relative">
+    <div id="banner" className="flex flex-col w-full mb-[130px] md:flex-row justify-center items-center h-[65vh] gap-[3%] mt-[38px] md:mb-[150px] relative">
       <img
         src={profile}
         width="100"

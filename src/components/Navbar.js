@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import hamburger from "../assets/hamburger.png";
+import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   const [display, setDisplay] = useState(false);
@@ -29,16 +30,16 @@ function Navbar() {
       {show ? (
         <ul className=" text-2xl w-[47%] pr-[5%] flex justify-between gap-[7%] navbar-list">
           <h3 className="hover:border-b-2 border-[rgba(85,85,85,255)] ">
-            About
+            <a href="banner">About</a>
           </h3>
           <h3 className="hover:border-b-2 border-[rgba(85,85,85,255)] ">
-            Experience
+            <a href="#about">Experience</a>
           </h3>
           <h3 className="hover:border-b-2 border-[rgba(85,85,85,255)] ">
-            Projects
+            <a href="#projects">Projects</a>
           </h3>
           <h3 className="hover:border-b-2 border-[rgba(85,85,85,255)] ">
-            Contact
+            <a href="#contact">Contact</a>
           </h3>
         </ul>
       ) : (
@@ -59,7 +60,7 @@ function Navbar() {
             }
           >
             <h3 className="hover:border-b-2 border-[rgba(85,85,85,255)] ">
-              About
+              <a href="/About">About</a>
             </h3>
             <h3 className="hover:border-b-2 border-[rgba(85,85,85,255)] ">
               Experience
