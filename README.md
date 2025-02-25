@@ -1,3 +1,8 @@
+#Personal Portfolio Website
+https://www.damensavvi.software/
+
+- Self hosted on a raspberry pi linux webserver using a Nginx reverse proxy onto an Express JS server with port forwarding between the raspberry pi and my home router set up with a cron job on the raspberry pi to dynamically update my router's dynamic IP with the DUCK DNS domain providers DNS settings which act as an intermediary domain routing midpoint between my home router and the domain damensavvi.software which is provided by GoDaddy. This intricate networking set up is to avoid paying for GoDaddys API for dynamically updating DNS settings.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
